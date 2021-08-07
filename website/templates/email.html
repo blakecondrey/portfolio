@@ -1,0 +1,58 @@
+<div class="container-fluid contact-form">
+
+    {% if success %}
+    <div class="container text-center">
+        <p id="fixedColor">Thanks for reaching out!</p>
+    </div>
+
+    {% else %}
+
+        {% for message in form.name.errors %}
+            <div class="flash">{{ message }}</div>
+        {% endfor %}
+
+        {% for message in form.email.errors %}
+            <div class="flash">{{ message }}</div>
+        {% endfor %}
+
+        {% for message in form.subject.errors %}
+            <div class="flash">{{ message }}</div>
+        {% endfor %}
+
+        {% for message in form.message.errors %}
+            <div class="flash">{{ message }}</div>
+        {% endfor %}
+        <form action="{{ url_for('routing.contact') }}" method="POST">
+            {{ form.hidden_tag() }}
+            <div class="row">
+                <div class="col-md">
+                    <div class="form-group" id="fixedColor">
+                        <!-- <input type="text" name="txtName" class="form-control" placeholder="Name"/> -->
+                        {{ form.name.label(class="form.label") }}
+                        {{ form.name(class='form-control') }}
+                    </div>
+                    <div class="form-group" id="fixedColor">
+                        <!-- <input type="text" name="txtEmail" class="form-control" placeholder="Email" value="" /> -->
+                        {{ form.email.label(class="form.label") }}
+                        {{ form.email(class='form-control') }}
+                    </div>
+                    <div class="form-group" id="fixedColor">
+                        <!-- <input type="text" name="txtPhone" class="form-control" placeholder="Subject" value="" /> -->
+                        {{ form.subject.label(class="form.label") }}
+                        {{ form.subject(class='form-control') }}
+                    </div>
+                    <div class="form-group" id="fixedColor">
+                        {{ form.message.label(class="form.label") }}
+                        {{ form.message(class="form-control") }}
+                        <!-- <input name="txtMsg" placeholder="Message" style="width: 100%; height: 200px;">                       -->
+                    </div>
+                    <div class="form-group" id="fixedColor">
+                        <input type="submit" name="btnSubmit" class="btn btnContact" value="Send" />
+                        {{ form.submit }}
+                    </div>
+                </div>
+    {% endif %}
+            </div>
+
+        </form>
+</div>
