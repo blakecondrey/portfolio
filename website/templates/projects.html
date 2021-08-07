@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="container landing">
+    <div class="row align-items-center landing">
+        <div class="col-lg text-center">
+            <h2 class="display-5">Projects</h2>
+        </div>
+        <div class="col-lg">
+            <div id="projectCard" class="card">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                    <h5 class="card-title">Project One</h5>
+                    <p id="projectDesc" class="card-text">Project Description
+                    </p>
+                    <a href="{{ contact.linkedin }}" class="btn btn-light">Find it here.</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg">
+            <div id="projectCard" class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Project Two</h5>
+                    <p id="projectDesc" class="card-text">Project Description
+                    </p>
+                    <a href="{{ contact.linkedin }}" class="btn btn-light">Find it here.</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg">
+            <div id="projectCard" class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Project Three</h5>
+                    <p id="projectDesc" class="card-text">Project Description
+                    </p>
+                    <a href="{{ contact.linkedin }}" class="btn btn-light">Find it here.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
