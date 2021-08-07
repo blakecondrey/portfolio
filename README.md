@@ -1,4 +1,4 @@
-# portfolio
+# My Flask App Portfolio Site!
 Check out my flask app portfolio!
 I tackled this project to accomplish a few things:
 1.) Adding a new technology to my toolset (flask, flask_sqlalchemy)
