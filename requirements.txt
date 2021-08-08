@@ -28,6 +28,7 @@ Flask-WTF==0.15.1
 folium==0.12.1
 geographiclib==1.52
 geopy==2.2.0
+gunicorn==20.1.0
 idna==2.9
 ipykernel==6.0.3
 ipython==7.25.0
@@ -71,6 +72,8 @@ protobuf==3.17.3
 ptyprocess==0.7.0
 pycodestyle==2.5.0
 pycparser==2.20
+pyfiglet==0.8.post1
+pygame==2.0.0.dev12
 Pygments==2.9.0
 pyparsing==2.4.7
 pyrsistent==0.18.0
@@ -96,3 +99,5 @@ webencodings==0.5.1
 Werkzeug==2.0.1
 widgetsnbextension==3.5.1
 WTForms==2.3.3
+xlrd==2.0.1
+yapf==0.30.0
