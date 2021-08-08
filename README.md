@@ -11,4 +11,4 @@ This was a fun, challenging, and rewarding experience!
 
 
 VIEW AT:
-https://blakecondrey.herokuapp.com/
+www.blakecondrey.com
