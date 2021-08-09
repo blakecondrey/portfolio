@@ -1,5 +1,6 @@
 from os import abort
 from flask import Blueprint, render_template, request, flash, current_app
+from flask_mail import Message, Mail
 from .form import ContactForm
 
 contact_points = {
@@ -9,6 +10,22 @@ contact_points = {
 }
 
 routing = Blueprint("routing", __name__, static_folder="static", template_folder="templates")
+
+def send_email(result):
+    msg = Message(sender = result.get('email'),
+    recipients = ['condrey.blake1217@gmail.com'])
+    msg.body = """
+    Hello there,
+
+    You just received a contact form.
+
+    Name: {}
+    Email: {}
+    Message: {}
+    """.format(result['name'], result['email'], result['message'])
+    mail = Mail()
+    mail.init_app(current_app)
+    mail.send(msg)
 
 @routing.route("/")
 def home():
@@ -26,10 +43,12 @@ def contact():
     message = None
     form = ContactForm()
     if request.method == 'POST':
-        name = form.name.data 
-        email = form.email.data
-        subject = form.subject.data
-        message = form.message.data
+        result = {}
+        result['name'] = request.form['name']
+        result['email'] = request.form['email'].replace(' ', '').lower()
+        result['subject'] = request.form['subject']
+        result['message'] = request.form['message']
+        send_email(result)
         return render_template("contact.html", contacts=contact_points, success=True)
 
     elif request.method == 'GET':

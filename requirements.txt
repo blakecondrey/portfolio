@@ -73,7 +73,6 @@ ptyprocess==0.7.0
 pycodestyle==2.5.0
 pycparser==2.20
 pyfiglet==0.8.post1
-pygame==2.0.0.dev12
 Pygments==2.9.0
 pyparsing==2.4.7
 pyrsistent==0.18.0

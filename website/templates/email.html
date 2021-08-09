@@ -27,24 +27,20 @@
             <div class="row">
                 <div class="col-md">
                     <div class="form-group" id="fixedColor">
-                        <!-- <input type="text" name="txtName" class="form-control" placeholder="Name"/> -->
                         {{ form.name.label(class="form.label") }}
                         {{ form.name(class='form-control') }}
                     </div>
                     <div class="form-group" id="fixedColor">
-                        <!-- <input type="text" name="txtEmail" class="form-control" placeholder="Email" value="" /> -->
                         {{ form.email.label(class="form.label") }}
                         {{ form.email(class='form-control') }}
                     </div>
                     <div class="form-group" id="fixedColor">
-                        <!-- <input type="text" name="txtPhone" class="form-control" placeholder="Subject" value="" /> -->
                         {{ form.subject.label(class="form.label") }}
                         {{ form.subject(class='form-control') }}
                     </div>
                     <div class="form-group" id="fixedColor">
                         {{ form.message.label(class="form.label") }}
-                        {{ form.message(class="form-control") }}
-                        <!-- <input name="txtMsg" placeholder="Message" style="width: 100%; height: 200px;">                       -->
+                        {{ form.message(class="form-control") }} <br>
                     </div>
                     <div class="form-group" id="fixedColor">
                         <input type="submit" name="btnSubmit" class="btn btnContact" value="Send" />

@@ -1,18 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
-<section class="container">
-    <div id="mainFooter" class="row align-items-center">
-        <div class="col-sm-4 text-center">
-            <h3 class="display-5 text-center">Contact</h3>
+<section class="container vh-100">
+    <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-12">            
+                <h3 class="display-3 text-center">Contact</h3>
         </div>
-        <div class="col text-center">
-            <p class="text-center">I'm currently open to opportunities! Get in touch, or feel free to <a href="{{ url_for('static', filename='pdf/Blake_Condrey_Resume_2021_v2.pdf') }}"
+        <div class="col-12">
+                <p class="display-8 text-center">I'm currently open to opportunities! Get in touch below, or feel free to <a href="{{ url_for('static', filename='pdf/Blake_Condrey_Resume_2021_v2.pdf') }}"
                     class="" style="color: #64ffda">take a resume.</a></p>
+                <p class="display-8 text-center">Contact Form currently under development, please utilize the <a href="mailto:{{ contacts.email }}"
+                    class="" style="color: #64ffda">e-mail link!</a></p>
         </div>
-    </div>
-    <div class="container-fluid">
-        <p class="text-center">E-mail form functionality under development, please refer to <a href="mailto:{{ contacts.email }}" style="color: #64ffda">e-mail link!</a></p>
-        {% include 'email.html' %}
+        <div class="col">    
+            <div class="container">
+            {% include 'email.html' %}
+            </div>
+        </div>
     </div>
 </section>
 {% endblock %}
