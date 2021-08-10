@@ -8,7 +8,6 @@
 
 body {
     background-color:#0a192f;
-    /* background-color: #00162b; */
     overflow: unset;
     color: #e6f1ff;
 }
@@ -52,15 +51,12 @@ a.nav-link:hover {
     color: #64ffda;
 }
 
-/* .collapse.navbar-collapse {
-    align-items: flex-end;
-    flex-direction: column-reverse;
-} */
 
 .landing {
     width: 100%;
     height: 85vh;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', serif;
