@@ -6,7 +6,9 @@ from .form import ContactForm
 contact_points = {
     "email": "condrey.blake1217@gmail.com",
     "github": "https://github.com/blakecondrey",
-    "linkedin": "https://www.linkedin.com/in/blakecondrey/"
+    "linkedin": "https://www.linkedin.com/in/blakecondrey/",
+    "gh_portfolio": "https://github.com/blakecondrey/portfolio",
+    "newsagg": "https://blakecondreynewsagg.herokuapp.com/"
 }
 
 routing = Blueprint("routing", __name__, static_folder="static", template_folder="templates")
