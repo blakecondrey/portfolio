@@ -1,20 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
-<section class="container vh-100">
+<section class="container landing">
     <div class="row h-100 justify-content-center align-items-center">
         <div class="col-12">            
-                <h3 class="display-3 text-center">Contact</h3>
+                <h3 class="display-2 text-center">Contact</h3>
         </div>
         <div class="col-12">
-                <p class="display-8 text-center">I'm currently open to opportunities! Get in touch below, or feel free to <a href="{{ url_for('static', filename='pdf/Blake_Condrey_Resume_2021_v2.pdf') }}"
-                    class="" style="color: #64ffda">take a resume.</a></p>
-                <p class="display-8 text-center">Contact Form currently under development, please utilize the <a href="mailto:{{ contacts.email }}"
-                    class="" style="color: #64ffda">e-mail link!</a></p>
-        </div>
-        <div class="col">    
-            <div class="container">
-            {% include 'email.html' %}
-            </div>
+                <p class="display-6 text-center">I'm currently open to opportunities! <a href="mailto:{{ contacts.email }}"
+                    class="" style="color: #64ffda">Get in touch</a>, or feel free to <a href="{{ url_for('static', filename='pdf/Blake_Condrey_Resume_2021_v2.pdf') }}"
+                    class="" style="color: #64ffda">take a resume</a>.</p>
         </div>
     </div>
 </section>
