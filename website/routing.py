@@ -7,7 +7,7 @@ contact_points = {
     "email": "condrey.blake1217@gmail.com",
     "github": "https://github.com/blakecondrey",
     "linkedin": "https://www.linkedin.com/in/blakecondrey/",
-    "gh_portfolio": "https://github.com/blakecondrey/portfolio",
+    "crwnfit": "http://crwnfit.herokuapp.com/",
     "newsagg": "https://blakecondreynewsagg.herokuapp.com/",
     "algo": "https://blakecondrey.github.io/sortingvisualizer/"
 }
