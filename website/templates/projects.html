@@ -6,7 +6,19 @@
             <h2 class="display-5">Projects</h2>
         </div>
         <div class="col-lg">
-            
+             <div class="col-lg">
+            <div id="projectCard" class="card mb-4">
+                <div class="card-body">
+                    <img src="{{ url_for('static', filename = 'imgs/crwnfitdemo.png') }}" alt="React E-Commerce Snapshot" class="card-img-top">
+                    <h5 class="card-title text-center">CRWNFiT React App</h5>
+                    <p id="projectDesc" class="card-text text-center">Full-Stack React Mock E-Commerce Site.
+                    </p>
+                    <div class="col text-center">
+                        <a href="{{ contact.crwnfit }}" class="btn btn-light">Find it here.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
             <div id="projectCard" class="card mb-4">
                 <!-- <img src="..." class="card-img-top" alt="..."> -->
                 <img src="{{ url_for('static', filename = 'imgs/newsaggdemo.png') }}" alt="News Aggregator Demo Snapshot" class="card-img-top">
@@ -30,19 +42,6 @@
                     </p>
                     <div class="col text-center">
                         <a href="{{ contact.algo }}" class="btn btn-light">Find it here.</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg">
-            <div id="projectCard" class="card mb-4">
-                <div class="card-body">
-                    <img src="{{ url_for('static', filename = 'imgs/crwnfitdemo.png') }}" alt="React E-Commerce Snapshot" class="card-img-top">
-                    <h5 class="card-title text-center">CRWNFiT React App</h5>
-                    <p id="projectDesc" class="card-text text-center">Full-Stack React Mock E-Commerce Site.
-                    </p>
-                    <div class="col text-center">
-                        <a href="{{ contact.crwnfit }}" class="btn btn-light">Find it here.</a>
                     </div>
                 </div>
             </div>
