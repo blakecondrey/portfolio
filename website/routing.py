@@ -4,7 +4,7 @@ from flask_mail import Message, Mail
 from .form import ContactForm
 
 contact_points = {
-    "email": "condrey.blake1217@gmail.com",
+    "email": "blake.condrey@outlook.com",
     "github": "https://github.com/blakecondrey",
     "linkedin": "https://www.linkedin.com/in/blakecondrey/",
     "crwnfit": "http://crwnfit.herokuapp.com/",
